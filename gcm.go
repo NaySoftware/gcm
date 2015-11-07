@@ -125,7 +125,7 @@ func (this *GcmClient) Send() (*GcmResponseStatus, error) {
     return gcmRespStatus, err 
   }
 
-  fmt.Println(string(jsonByte))
+  // fmt.Println(string(jsonByte))
 
   request, err := http.NewRequest("POST", server_url , bytes.NewBuffer(jsonByte))
   request.Header.Set("Authorization", this.apiKeyHeader())
