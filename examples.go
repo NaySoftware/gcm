@@ -12,7 +12,7 @@ const (
 )
 
 
-func main() {
+func Exmaples() {
 
   p := &gcm.NotificationPayload{
     Title : "Android",
