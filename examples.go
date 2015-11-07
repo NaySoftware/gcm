@@ -30,7 +30,7 @@ func main() {
   }
 
   // data := map[string]string{
-  //   "message": "Hello Xman",
+  //   "message": "Hello World",
   // }
 
   client := gcm.NewGcmClient(GCM_API_KEY)
