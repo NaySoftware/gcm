@@ -4,7 +4,7 @@ Go - GCM library ( Google Cloud Messaging )
 #Example
 
 ```golang
-package gcm
+package main
 
 
 import (
@@ -17,7 +17,7 @@ const (
 
 )
 
-func Exmaples() {
+func main() {
 
   p := &gcm.NotificationPayload{
     Title : "Android",
