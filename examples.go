@@ -2,7 +2,6 @@ package gcm
 
 
 import (
-  "gcm"
   "fmt"
 )
 
@@ -14,7 +13,7 @@ const (
 
 func Exmaples() {
 
-  p := &gcm.NotificationPayload{
+  p := &NotificationPayload{
     Title : "Android",
     Body: "Hello Android",
     Icon: "ic_stat_ic_notification",
@@ -33,7 +32,7 @@ func Exmaples() {
   //   "message": "Hello World",
   // }
 
-  client := gcm.NewGcmClient(GCM_API_KEY)
+  client := NewGcmClient(GCM_API_KEY)
 
   // data message exmaple
   // status, err := client.NewDevicesList(ids).SetMsgData(data).Send()
